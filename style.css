@@ -23,7 +23,7 @@ html, body {
 .labels {
     display: inline-block;
     text-align: right;
-    width: 50%;
+    width: 40%;
     padding: 5px;
     vertical-align: bottom;
     margin-top: 10px;
