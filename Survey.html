@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey form</title>
+    <link rel="stylesheet" href="/Survey form/style.css">
+</head>
+<body>
+    <h1 id="title">Business Promotion Form</h1>
+  <div id="main-form">
+    <p id="description">Promotion Questionnaire</p>
+    <form action="https://crossorigin.me/https://freecodecamp.com" method="GET" id="survey-form">
+    <div class="maintab">
+      <div class="labels">
+      <label for="name" id="name-label">Name: *</label></div>
+      <div class="tabs">
+      <input autofocus type="text" id="name" placeholder="Enter your name" required></div>
+    </div>
+    <div class="maintab">
+        <div class="labels">
+      <label for="email" id="email-label">Email: *</label></div>
+      <div class="tabs">
+      <input type="email" id="email" placeholder="Enter your email" required>
+    </div>
+      <div class="maintab">
+          <div class="labels">
+      <label for="number" id="number-label">Age: *</label></div>
+      <div class="tabs">
+      <input type="number" min="1" max="125" id="number" placeholder="Age" required>
+    </div>
+      <div class="maintab">
+          <div class="labels">
+      <label for="phone" id="tel-label">Phone number *</label></div>
+      <div class="tabs">
+      <input type="tel" id="phone" name="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </div>
+    <div class="maintab">
+        <div class="labels">
+      <label for="dropdown" id="dropdow-label">Have you ever shopped with us? *</label></div>
+      <div class="tabs">
+        <select name="currentpos" id="dropdown">
+        <option disabled selected value>Select an Option</option>
+        <option value="yes">YES</option>
+        <option value="no">NO</option>
+        <option value="maybe">MAYBE</option>
+      </select></div>
+      </div>
+    <fieldset>
+      <legend>Share with us how you get to know us</legend>
+      <div class="maintab">
+          <div id="row">
+            <p>Through *</p></div>
+      <div class="tabs">
+      <ul style="list-style: none;">
+          <li class="radio"><label for="website">
+        <input type="radio" id="website" name="through" value="website">Website
+      </label></li>
+      <li class="radio"><label for="tv_commercial">
+          <input type="radio" id="tv_commercial" name="through" value="tv_commercial">TV Commercial
+        </label></li>
+        <li class="radio"><label for="radio_commercial">
+            <input type="radio" id="radio_commercial" name="through" value="radio_commercial">Radio Commercial
+          </label></li>
+          <li class="radio"><label for="print_advertisement">
+              <input type="radio" id="print_advertisement" name="through" value="print_advertisement">Print Advertisement
+            </label></li>
+            <li class="radio"><label for="referral">
+                <input type="radio" id="referral" name="through" value="referral">Referral
+              </label></li>
+              <li class="radio"><label for="return_customer">
+                  <input type="radio" id="return_customer" name="through" value="return_customer">Return Customer
+                </label></li>
+                <li class="radio"><label for="others">
+                    <input type="radio" id="others" name="through" value="others">Other's
+                  </label></li></ul></div>
+                </div>
+    </fieldset>
+    <div class="maintab">
+        <div class="labels">
+    <label for="please_specify">
+        Please Specify *</label></div>
+        <div class="tabs">
+        <input type="text" id="please_specify" placeholder="If others, please specify details">
+      </div></div>
+    <fieldset>
+        <legend>What do you wish to shop today</legend>
+        <div class="maintab">
+            <div id="row">
+                <p>I am going for *</p></div>
+                <div class="tabs">
+                    <ul style="list-style: none;">
+                        <li class="checkbox"><label for="Living/Family Room">
+          <input type="checkbox" value="1" id="Living/Family Room" name="I am going for?">Living/Family Room
+        </label></li>
+        <li class="checkbox"><label for="Adult Bedroom">
+            <input type="checkbox" value="2" id="Adult Bedroom" name="I am going for?">Adult Bedroom
+          </label></li>
+          <li class="checkbox"><label for="Kids Bedroom">
+              <input type="checkbox" value="3" id="Kids Bedroom" name="I am going for?">Kids Bedroom
+            </label></li>
+            <li class="checkbox"><label for="Mattresses">
+              <input type="checkbox" value="4" id="Mattresses" name="I am going for?">Mattresses
+            </label></li>
+            <li class="checkbox"><label for="Kitchen/Dining Room">
+              <input type="checkbox" value="5" id="Kitchen/Dining Room" name="I am going for?">Kitchen/Dining Room
+            </label></li>
+            <li class="checkbox"><label for="Home Theater">
+              <input type="checkbox" value="6" id="Home Theater" name="I am going for?">Home Theater
+            </label></li>
+            <li class="checkbox"><label for="Home Theater">
+              <input type="checkbox" value="7" id="Home Theater" name="I am going for?">Home Theater
+            </label></li>
+            <li class="checkbox"><label for="Rugs">
+              <input type="checkbox" value="8" id="Rugs" name="I am going for?">Rugs
+            </label></li>
+            <li class="checkbox"><label for="Other">
+              <input type="checkbox" value="9" id="Other" name="I am going for?">Other
+            </label></li></ul>
+            </div>
+        </div>
+      </fieldset>
+      <div class="maintab">
+          <div class="labels">
+      <label for="comments">Comments</label></div>
+      <div class="tabs">
+      <textarea name="comments" id="comments" placeholder="Enter your comments here" cols="40" rows="5"></textarea>
+  </div>
+</div>
+<div class="button">
+    <button type="submit" id="submit">Submit</button>
+  </div>
+    </form> 
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
