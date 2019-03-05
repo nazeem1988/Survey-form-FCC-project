@@ -27,6 +27,7 @@ html, body {
     padding: 5px;
     vertical-align: bottom;
     margin-top: 10px;
+    max-width: 100%
 }
 .tabs {
     display: inline-block;
@@ -63,4 +64,5 @@ fieldset {
 .button {
     text-align: center;
     margin-top: 20px;
+    max-width: 100%
 }
