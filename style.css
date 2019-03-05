@@ -27,7 +27,18 @@ html, body {
     padding: 5px;
     vertical-align: bottom;
     margin-top: 10px;
-    max-width: 100%
+}
+#name {
+    max-width: 100%;
+}
+#email {
+    max-width: 100%;
+}
+.nazeem {
+    max-width: 100%;
+}
+#please_specify {
+    max-width: 100%;
 }
 .tabs {
     display: inline-block;
@@ -64,5 +75,7 @@ fieldset {
 .button {
     text-align: center;
     margin-top: 20px;
+}
+#comments {
     max-width: 100%;
 }
